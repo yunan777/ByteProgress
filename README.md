@@ -1,13 +1,13 @@
-## Class: ByteProgress
+# Class: ByteProgress
 
-# Definition
+## Definition
 ```c#
 public sealed class ByteProgress : IProgress<int>, IDisposable
 ```
 Namespace: ByteProgress
 Implements: IProgress<int>, IDisposable
 
-# Examples
+## Examples
 ```c#
 using ByteProgress
 using System.Buffers;
@@ -40,7 +40,7 @@ internal class Example
 
 ```
 
-# Properties
+## Properties
 ```c#
 IObservable<long> RawTotalObservable; // Get a raw observable sequence of total read bytes. This sequence is not sampled.
 
@@ -48,7 +48,7 @@ IObservable<int> RawReportObservable; // Get a raw observable sequence of byte r
 
 ```
 
-# Methods
+## Methods
 ```c#
 IObservable<long> GetTotalObservable(TimeSpan interval);
 
