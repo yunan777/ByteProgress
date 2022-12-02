@@ -9,7 +9,7 @@ Implements: IProgress<int>, IDisposable
 
 ## Examples
 ```c#
-using ByteProgress
+using ByteProgress;
 using System.Buffers;
 
 namespace ByteProgressExample;
