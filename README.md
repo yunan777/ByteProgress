@@ -1,4 +1,5 @@
 # Class: ByteProgress
+An IProgress<T> implementation for reporting byte processing progress.
 
 ## Definition
 ```c#
