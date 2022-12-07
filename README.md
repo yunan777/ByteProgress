@@ -1,5 +1,7 @@
 # Class: ByteProgress
 
+An IProgress\<T\> implementation for reporting byte processing progress.
+
 ## Definition
 
 ```c#
@@ -12,7 +14,7 @@ Implements: IProgress\<int\>, IDisposable
 ## Examples
 
 ```c#
-using ByteProgress
+using ByteProgress;
 using System.Buffers;
 
 namespace ByteProgressExample;
