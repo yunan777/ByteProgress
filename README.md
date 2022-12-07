@@ -1,13 +1,16 @@
-## Class: ByteProgress
+# Class: ByteProgress
 
-# Definition
+## Definition
+
 ```c#
 public sealed class ByteProgress : IProgress<int>, IDisposable
 ```
-Namespace: ByteProgress
-Implements: IProgress<int>, IDisposable
 
-# Examples
+Namespace: ByteProgress
+Implements: IProgress\<int\>, IDisposable
+
+## Examples
+
 ```c#
 using ByteProgress
 using System.Buffers;
@@ -37,18 +40,18 @@ internal class Example
         }
     }
 }
-
 ```
 
-# Properties
+## Properties
+
 ```c#
 IObservable<long> RawTotalObservable; // Get a raw observable sequence of total read bytes. This sequence is not sampled.
 
 IObservable<int> RawReportObservable; // Get a raw observable sequence of byte reading report. This sequence is not sampled.
-
 ```
 
-# Methods
+## Methods
+
 ```c#
 IObservable<long> GetTotalObservable(TimeSpan interval);
 
@@ -57,5 +60,4 @@ IObservable<long> GetSpeedObservable(TimeSpan interval);
 void Dispose();
 
 void Report(int value);
-
 ```
